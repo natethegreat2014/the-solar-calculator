@@ -1,18 +1,43 @@
-This is a simple web app that helps you figure out how much solar power you need to charge an electric car.
-You pick:
+                                Solar EV Calculator
 
-the state you live in
+A simple Flask web app that estimates how much solar energy you can use to charge an electric vehicle.
+You choose your state, solar system size, EV model, and daily miles, and the app calculates:
 
-the size of your solar system
+Daily solar energy (kWh)
 
-the electric car you want to charge
+Estimated miles you can drive from that energy
 
-how many miles you want to drive each day
+Battery size of the selected EV
 
-Then the calculator tells you:
+How many sunny days it would take to fully charge the battery
 
-how much energy your solar panels make
+                                          Features
 
-how many miles of driving that gives you
+All 50 U.S. states with average sun‑hours
 
-how many sunny days it would take to fill your car’s battery
+Large list of EV models (past + present)
+
+Clean, simple interface
+
+Built with Flask + HTML
+
+Easy to run locally or deploy online
+
+                                        How to Run
+
+pip install -r requirements.txt
+python main.py
+then open http://127.0.0.1:5000
+
+                                        Files
+main.py — Flask app
+
+index.html — main page
+
+help.html — help page
+
+requirements.txt — dependencies
+
+render.yaml — deployment config
+
+h
